@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIVoorEmlyn.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Column="0" x:Name="MijnLayout">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <Rectangle Grid.Column="0" MinimumWidthRequest="50" MinimumHeightRequest="50" Fill="Red"></Rectangle>
+                <Label Grid.Column="1" FontSize="36" HorizontalTextAlignment="Center">STIEM!</Label>
+                <Rectangle Grid.Column="2" MinimumWidthRequest="50" MinimumHeightRequest="50" Fill="Blue"></Rectangle>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label FontSize="36">
+                    SEARCH:
+                </Label>
+                <Rectangle Grid.Column="1" MinimumHeightRequest="50" Fill="Blue"></Rectangle>
+
+
+                <Label Grid.Row="1" FontSize="36">
+                    GENRE:
+                </Label>
+                <Rectangle Grid.Row="1" Grid.Column="1" MinimumHeightRequest="50" Fill="Blue"></Rectangle>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+
+
+
+        </VerticalStackLayout>
+
+        <ScrollView MaximumHeightRequest="400" Grid.Row="1">
+            <FlexLayout MaximumHeightRequest="400"  x:Name="MijnFlexLayout" Wrap="Wrap" Direction="Row">
+
+            </FlexLayout>
+        </ScrollView>
+    </Grid>
+    
+
+    <!--<VerticalStackLayout x:Name="MijnLayout">
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Column="0" MinimumWidthRequest="50" MinimumHeightRequest="50" Fill="Red"></Rectangle>
+            <Label Grid.Column="1" FontSize="36" HorizontalTextAlignment="Center">STIEM!</Label>
+            <Rectangle Grid.Column="2" MinimumWidthRequest="50" MinimumHeightRequest="50" Fill="Blue"></Rectangle>
+        </Grid>
+
+        <ScrollView MaximumHeightRequest="400">
+
+            <VerticalStackLayout x:Name="GameList">
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle Grid.Column="0" MinimumWidthRequest="50" MinimumHeightRequest="50" Fill="Red"></Rectangle>
+                    <Label Grid.Column="1" FontSize="36" HorizontalTextAlignment="Center">PRICES</Label>
+                </Grid>
+                
+                
+            </VerticalStackLayout>
+            
+        </ScrollView>
+        <Label HorizontalTextAlignment="End" FontSize="36">
+            TOTAL PRICE: EURO
+        </Label>
+
+    </VerticalStackLayout>-->
+
+</ContentPage>
